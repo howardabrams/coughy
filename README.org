@@ -1,0 +1,23 @@
+
+Why Coughy? Well, CoffeeScript gives JavaScript a much more palatable
+syntax. Of course, each of your projects include the lovely [[http://underscorejs.org/][Underscore]]
+library, however, pre-pending =_.= makes your code look crummy.
+
+Coughy is <ahem> quite wrong in that it places the Underscore library
+into the global name space. /WHAT!?/ Yes. Just look at this beautiful
+code:
+
+#+BEGIN_SRC coffee
+  # Sum the squares that are less than 25... right, it is 30.
+  reduce( map( range(5), (x) -> x * x ),
+          (total, cur) -> total + cur )
+#+END_SRC
+
+Why do this? This certainly isn't for everyone, or every project, but
+for working on [[http://projecteuler.net/][Project Euler]], or teaching programming concepts, this
+seems like <cough> an acceptable solution.
+
+*Think of this...* An even more functional approach to development is
+with something like the immutable data structures available from [[http://swannodette.github.io/mori/][Mori]]
+... However, since Mori's functions overlap with Underscore (but seem
+to be more general), I may just swap it.

@@ -1,0 +1,33 @@
+{
+    "name": "coughy",
+    "version": "0.0.1",
+    "description": "Placing the Underscore project into the Global Namespace.",
+    "main": "helpers.js",
+    "author": "Howard Abrams",
+    "license": "BSD",
+
+    "dependencies": {
+        "coffee-script": ">= 1.6.3",
+        "underscore": ">= 1.5.2",
+        "mori": "latest"
+    },
+    "devDependencies": {
+        "swank-js": ">=0.0.1"
+    },
+    "scripts": {
+        "swank": "node node_modules/swank-js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "http://github.com/howardabrams/coughy.git"
+    },
+    "keywords": [
+        "coffee",
+        "coffeescript",
+        "functional"
+    ],
+    "bugs": {
+        "url": "https://github.com/howardabrams/coughy/issues"
+    }
+}

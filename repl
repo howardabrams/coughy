@@ -1,0 +1,6 @@
+#!/bin/sh
+# ------------------------------------------------------------
+# To start this, first install NESH globally:
+#     npm install -g nesh
+
+nesh --lang coffee --eval 'helpers.js'
