@@ -17,6 +17,19 @@ Why do this? This certainly isn't for everyone, or every project, but
 for working on [[http://projecteuler.net/][Project Euler]], or teaching programming concepts, this
 seems like <cough> an acceptable solution.
 
+** REPL Sweetness
+
+By using the Nesh project, create a Shell function like this:
+
+#+BEGIN_SRC sh
+nesh --lang coffee --eval 'coughy.js'
+#+END_SRC
+
+Where =coughy.js= needs to be the filename to the magic <ahem> script
+that provides this pleasing abomination.
+
+** Futures
+
 *Think of this...* An even more functional approach to development is
 with something like the immutable data structures available from [[http://swannodette.github.io/mori/][Mori]]
 ... However, since Mori's functions overlap with Underscore (but seem
