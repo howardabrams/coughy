@@ -1,4 +1,3 @@
-
 Why Coughy? Well, CoffeeScript gives JavaScript a much more palatable
 syntax. Of course, each of your projects include the lovely [[http://underscorejs.org/][Underscore]]
 library, however, pre-pending =_.= makes your code look crummy.
@@ -17,20 +16,45 @@ Why do this? This certainly isn't for everyone, or every project, but
 for working on [[http://projecteuler.net/][Project Euler]], or teaching programming concepts, this
 seems like <cough> an acceptable solution.
 
-** REPL Sweetness
+** Installation
 
-By using the Nesh project, create a Shell function like this:
+   As usual, you can take advantage of this project by adding this to
+   your normal Node-related project:
 
 #+BEGIN_SRC sh
-nesh --lang coffee --eval 'coughy.js'
+npm install coughy
 #+END_SRC
 
-Where =coughy.js= needs to be the filename to the magic <ahem> script
-that provides this pleasing abomination.
+   Now, you can create scripts that use those functions directly:
+
+#+BEGIN_SRC js
+require('coughy');
+#+END_SRC
+
+   *Note:* You do not need to assign the results of the coughy module
+   *because <ahem>, it is already <cough> placed in the global namespace.
+
+** REPL Sweetness
+
+   By using the [[http://danielgtaylor.github.io/nesh/][Nesh project]], we can make pre-load /coughy/ in order to
+   make a better REPL:
+
+#+BEGIN_SRC sh
+  npm install -g nesh
+#+END_SRC
+
+   Then, create a Shell function like this:
+
+#+BEGIN_SRC sh
+  nesh --lang coffee --eval 'node_modules/coughy/coughy.js'
+#+END_SRC
+
+   Where =coughy.js= needs to be the filename to the magic <ahem> script
+   that provides this pleasing abomination.
 
 ** Futures
 
-*Think of this...* An even more functional approach to development is
-with something like the immutable data structures available from [[http://swannodette.github.io/mori/][Mori]]
-... However, since Mori's functions overlap with Underscore (but seem
-to be more general), I may just swap it.
+   *Think of this...* An even more functional approach to development
+   is with something like the immutable data structures available from
+   [[http://swannodette.github.io/mori/][Mori]] ... However, since Mori's functions overlap with Underscore
+   (but seem to be more general), I may just swap it.
