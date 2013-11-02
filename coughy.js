@@ -10,7 +10,7 @@ __ = require('underscore');
 print  = function() { console.log.apply(this, arguments); };
 
 // Include some useful Lisp functions:
-construct = function(h, t) { [ h ].concat(t); };
+construct = function(h, t) { return [ h ].concat(t); };
 cons = construct;
 
 // Import "most" of the Underscore library into the global namespace:
@@ -121,3 +121,7 @@ where = __.where;
 without = __.without;
 wrap = __.wrap;
 zip = __.zip;
+
+return {
+  print: print
+}
