@@ -3,4 +3,14 @@
 # To start this, first install NESH globally:
 #     npm install -g nesh
 
-nesh --lang coffee --eval 'coughy.js'
+LIST=`stat -F "$0"`
+if echo $LIST | grep -- '->' >/dev/null
+then
+    ACTUAL=`echo $LIST | cut -d'>' -f2`
+    DIR=`dirname "$ACTUAL"`
+    cd "$(echo $DIR | sed 's/^ //')"
+fi
+
+nesh --lang coffee --eval "coughy.js"
+
+
