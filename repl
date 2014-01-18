@@ -11,6 +11,6 @@ then
     cd "$(echo $DIR | sed 's/^ //')"
 fi
 
-nesh --lang coffee --eval "coughy.js"
+nesh --lang coffee --eval "coughy2.js"
 
 
